@@ -1,0 +1,145 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/* Write your additonal styles below */
+body, html, #container, #map {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  position: absolute;
+}
+
+#userInput {
+  position: absolute;
+  z-index: 3;
+}
+
+/*search box style reference: https://developers.google.com/maps/documentation/javascript/examples/places-searchbox*/
+
+#searchBuilding {
+  margin-top: 16px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 82px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 340px;
+}
+
+#searchBuilding:focus {
+  border-color: #4d90fe;
+}
+
+#listBuilding {
+  width: 340px;
+  height: 200px;
+  font-size: 13px;
+  overflow: hidden; 
+  overflow-y: scroll;
+  background-color: #fff;
+  /*font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;*/
+  margin-left: 82px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+}
+
+.unchecked {
+  /*border-color: #5bc0de;
+  color: #fff;*/
+}
+
+/*checkbox style ref: https://github.com/flatlogic/awesome-bootstrap-checkbox*/
+
+.checkbox-info {
+  height: 48px;
+  padding-left: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #efefef;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-top: 9px;
+  padding-bottom: 5px;
+}
+
+.checkbox-info:hover {
+  background-color: rgba(128,128,128,0.3);
+}
+
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 10px;
+}
+
+.checkbox label::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox-check {
+  padding-left: 20px;
+  background-color: rgba(128,128,128,0.3);
+  cursor: pointer;
+  z-index: 5px;
+}
+
+.checkbox-check label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 10px;
+}
+
+.checkbox-check label::before {
+  content: '✔';
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
