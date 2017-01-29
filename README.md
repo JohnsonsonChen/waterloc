@@ -3,4 +3,4 @@ Allows users to search buildings at University of Waterloo by using University o
 
 Users can also locate the buildings at a map by using Google Map’s api
 
-Run with the command "grunt serve" in the terminal
+Run with the command "grunt serve" under the waterloc repo in the terminal
